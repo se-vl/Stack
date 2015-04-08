@@ -4,7 +4,7 @@ class MutableStack
 
     /**
      * @ensure result.isEmpty()
-     * @result result.size() == 0
+     * @ensure result.size() == 0
      */
     public MutableStack()
     {
