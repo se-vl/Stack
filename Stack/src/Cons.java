@@ -26,4 +26,10 @@ class Cons implements PersistentStack
     {
         return _tail;
     }
+
+    @Override
+    public boolean isEmpty()
+    {
+        return false;
+    }
 }

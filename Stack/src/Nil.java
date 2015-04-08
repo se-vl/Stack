@@ -19,4 +19,10 @@ class Nil implements PersistentStack
         // TODO Better error handling in future lectures
         return null;
     }
+
+    @Override
+    public boolean isEmpty()
+    {
+        return true;
+    }
 }

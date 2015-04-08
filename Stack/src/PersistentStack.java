@@ -14,4 +14,9 @@ interface PersistentStack
      * Returns the stack below the top element.
      */
     PersistentStack pop();
+    
+    /**
+     * Determines whether this stack is empty.
+     */
+    boolean isEmpty();
 }
