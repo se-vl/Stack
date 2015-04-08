@@ -1,4 +1,4 @@
-public class PostfixParser
+class PostfixParser
 {
     private MutableStack _operands;
 
@@ -21,11 +21,14 @@ public class PostfixParser
             case "+":
                 add();
                 break;
+
             case "*":
                 multiply();
                 break;
+
             default:
                 insert(atom);
+                break;
             }
         }
         return _operands.pop();
@@ -33,23 +36,19 @@ public class PostfixParser
 
     private void insert(String atom)
     {
-        // TODO Auto-generated method stub
         double x = Integer.parseInt(atom);
         _operands.push(x);
     }
 
     private void multiply()
     {
-        // TODO Auto-generated method stub
         double b = _operands.pop();
         double a = _operands.pop();
         _operands.push(a * b);
-
     }
 
     private void add()
     {
-        // TODO Auto-generated method stub
         double b = _operands.pop();
         double a = _operands.pop();
         _operands.push(a + b);
