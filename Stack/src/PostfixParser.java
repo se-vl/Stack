@@ -6,7 +6,6 @@ public class PostfixParser
     {
         _operands = new MutableStack();
     }
-
     
     /**
      * Evaluates a given formula in postfix notation.
@@ -32,14 +31,12 @@ public class PostfixParser
         return _operands.pop();
     }
 
-
     private void insert(String atom)
     {
         // TODO Auto-generated method stub
         double x = Integer.parseInt(atom);
         _operands.push(x);
     }
-
 
     private void multiply()
     {
@@ -50,7 +47,6 @@ public class PostfixParser
         
     }
 
-
     private void add()
     {
         // TODO Auto-generated method stub
@@ -59,4 +55,3 @@ public class PostfixParser
         _operands.push(a + b);
     }
 }
-

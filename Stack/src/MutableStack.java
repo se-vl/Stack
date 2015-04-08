@@ -19,7 +19,7 @@ class MutableStack
 
     public double pop()
     {
-        double result = top();//_current.top();
+        double result = _current.top();
         _current = _current.pop();
         return result;
     }

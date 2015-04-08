@@ -1,4 +1,3 @@
-
 class Cons implements PersistentStack
 {
     private final double _head;
