@@ -23,4 +23,14 @@ class MutableStack
         _current = _current.pop();
         return result;
     }
+    
+    public boolean isEmpty()
+    {
+        return _current.isEmpty();
+    }
+    
+    public int size()
+    {
+        return _current.size();
+    }
 }
