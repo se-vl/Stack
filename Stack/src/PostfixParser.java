@@ -6,7 +6,7 @@ public class PostfixParser
     {
         _operands = new MutableStack();
     }
-    
+
     /**
      * Evaluates a given formula in postfix notation.
      * For example, evaluate("1 2 3 * +") returns 7. 
@@ -44,7 +44,7 @@ public class PostfixParser
         double b = _operands.pop();
         double a = _operands.pop();
         _operands.push(a * b);
-        
+
     }
 
     private void add()

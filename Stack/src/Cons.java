@@ -2,7 +2,7 @@ class Cons implements PersistentStack
 {
     private final double _head;
     private final PersistentStack _tail;
-    
+
     public Cons(double head, PersistentStack tail)
     {
         _head = head;
