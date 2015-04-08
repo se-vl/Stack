@@ -23,7 +23,7 @@ public class MutableStackTest
     {
         _stack.push(42);
         assertFalse(_stack.isEmpty());
-        assertEquals(42.0, _stack.top());
+        assertEquals(42.0, _stack.top(), 0);
         assertEquals(1, _stack.size());
     }
 
@@ -33,6 +33,6 @@ public class MutableStackTest
         _stack.push(1);
         _stack.push(2);
         _stack.pop();
-        assertEquals(1.0, _stack.top());
+        assertEquals(1.0, _stack.top(), 0);
     }
 }
