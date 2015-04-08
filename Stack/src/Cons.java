@@ -32,4 +32,10 @@ class Cons implements PersistentStack
     {
         return false;
     }
+
+    @Override
+    public int size()
+    {
+        return 1 + _tail.size();
+    }
 }

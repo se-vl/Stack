@@ -19,4 +19,9 @@ interface PersistentStack
      * Determines whether this stack is empty.
      */
     boolean isEmpty();
+    
+    /**
+     * Returns the number of elements on this stack.
+     */
+    int size();
 }

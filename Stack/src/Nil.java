@@ -25,4 +25,10 @@ class Nil implements PersistentStack
     {
         return true;
     }
+
+    @Override
+    public int size()
+    {
+        return 0;
+    }
 }
