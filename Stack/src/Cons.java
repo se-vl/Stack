@@ -1,4 +1,4 @@
-class Cons implements PersistentStack
+class Cons extends AbstractStack
 {
     private final double _head;
     private final PersistentStack _tail;
@@ -7,12 +7,6 @@ class Cons implements PersistentStack
     {
         _head = head;
         _tail = tail;
-    }
-
-    @Override
-    public PersistentStack push(double x)
-    {
-        return new Cons(x, this);
     }
 
     @Override

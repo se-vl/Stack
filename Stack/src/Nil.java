@@ -1,11 +1,5 @@
-class Nil implements PersistentStack
+class Nil extends AbstractStack
 {
-    @Override
-    public PersistentStack push(double x)
-    {
-        return new Cons(x, this);
-    }
-
     @Override
     public double top()
     {
